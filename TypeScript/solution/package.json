@@ -1,0 +1,13 @@
+{
+    "name": "solution",
+    "main": "src/main.ts",
+    "private": true,
+    "scripts": {
+        "dbg": "ts-node --project tsconfig.json"
+    },
+    "devDependencies": {
+        "@types/node": "^22.13.8",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.2"
+    }
+}
