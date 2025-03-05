@@ -2,12 +2,14 @@
 bin
 build
 
+# Kotlin project
+.gradle
+.Kotlin
+build
+
 # Rust project
 target
 
 # TypeScript project
 node_modules
 pnpm-lock.yaml
-
-# Visual Studio Code workspace
-*.code-workspace

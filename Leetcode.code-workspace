@@ -1,0 +1,35 @@
+{
+    "folders": [
+        {
+            "name": "C",
+            "path": "C"
+        },
+        {
+            "name": "C++",
+            "path": "C++"
+        },
+        {
+            "name": "Go",
+            "path": "Go"
+        },
+        {
+            "name": "Kotlin",
+            "path": "Kotlin"
+        },
+        {
+            "name": "Rust",
+            "path": "Rust"
+        },
+        {
+            "name": "TypeScript",
+            "path": "TypeScript"
+        }
+    ],
+    "settings": {
+        "gopls": {
+            "ui.diagnostic.analyses": {
+                "unusedfunc": false
+            }
+        }
+    }
+}
