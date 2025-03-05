@@ -4,12 +4,14 @@
  * [300] 最长递增子序列
  */
 
+#[allow(dead_code)]
 struct Solution {}
 
 // @lc code=start
 use std::cmp::max;
 
 impl Solution {
+    #[allow(dead_code)]
     pub fn length_of_lis(nums: Vec<i32>) -> i32 {
         let mut cache: Vec<i32> = Vec::new();
         cache.push(1);
