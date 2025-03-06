@@ -17,6 +17,10 @@
             "path": "Kotlin"
         },
         {
+            "name": "Python",
+            "path": "Python"
+        },
+        {
             "name": "Rust",
             "path": "Rust"
         },

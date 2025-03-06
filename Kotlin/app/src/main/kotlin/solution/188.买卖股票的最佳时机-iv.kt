@@ -4,7 +4,7 @@
  * [188] 买卖股票的最佳时机 IV
  */
 
-package solution
+package solution188
 
 // @lc code=start
 import kotlin.math.max
