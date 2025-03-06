@@ -5,6 +5,7 @@
  */
 
 #[derive(PartialEq, Eq, Clone, Debug)]
+#[allow(dead_code)]
 pub struct ListNode {
     pub val: i32,
     pub next: Option<Box<ListNode>>,
@@ -12,14 +13,16 @@ pub struct ListNode {
 
 impl ListNode {
     #[inline]
+    #[allow(dead_code)]
     fn new(val: i32) -> Self {
         ListNode { next: None, val }
     }
 }
 
+#[allow(dead_code)]
 struct Solution {}
 // @lc code=start
-use std::{cmp::Reverse, collections::BinaryHeap};
+use std::collections::BinaryHeap;
 
 // Definition for singly-linked list.
 // #[derive(PartialEq, Eq, Clone, Debug)]
@@ -39,6 +42,7 @@ use std::{cmp::Reverse, collections::BinaryHeap};
 // }
 impl ListNode {
     #[inline]
+    #[allow(dead_code)]
     fn new2(val: i32, next: Option<Box<ListNode>>) -> Self {
         ListNode { next, val }
     }
@@ -47,6 +51,7 @@ impl ListNode {
 // Python 堆排序（列表实现）超时，难绷
 // 换 Rust 用堆排序给你扬咯
 impl Solution {
+    #[allow(dead_code)]
     pub fn sort_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
         if head.is_none() {
             return None;
@@ -60,10 +65,8 @@ impl Solution {
         }
 
         let mut result: Option<Box<ListNode>> = None;
-        let mut p = None;
         while heap.len() > 0 {
-            p = Some(Box::new(ListNode::new2(heap.pop()?, result)));
-            result = p;
+            result = Some(Box::new(ListNode::new2(heap.pop()?, result)));
         }
 
         return result;
