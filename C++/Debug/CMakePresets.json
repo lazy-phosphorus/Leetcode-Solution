@@ -13,6 +13,7 @@
             "cacheVariables": {
                 "CMAKE_CXX_COMPILER": "clang++",
                 "CMAKE_CXX_STANDARD": "17",
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "on",
                 "CMAKE_RUNTIME_OUTPUT_DIRECTORY": "${sourceDir}/bin",
                 "CMAKE_ARCHIVE_OUTPUT_DIRECTORY": "${sourceDir}/bin",
                 "CMAKE_LIBRARY_OUTPUT_DIRECTORY": "${sourceDir}/bin"
